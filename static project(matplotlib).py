@@ -19,7 +19,7 @@ def start_draw(event):
     
     """keshidane khotoot va kamel kardane shekl"""
     
-    if len(pos_x)>1 and len(pos_y)>1:
+    if len(pos_x)>1 or len(pos_y)>1:
         
         if abs(event.xdata-pos_x[0]) > 0.05*pos_x[0] or abs(event.ydata-pos_y[0]) > 0.05*pos_y[0]:
             plt.plot(pos_x, pos_y)
