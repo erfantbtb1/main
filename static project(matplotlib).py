@@ -16,7 +16,7 @@ def start_draw(event):
     pos_x.append(event.xdata)
     pos_y.append(event.ydata)
     plt.scatter(pos_x, pos_y)
-    
+    plt.draw()
     """keshidane khotoot va kamel kardane shekl"""
     
     if len(pos_x)>1 or len(pos_y)>1:
